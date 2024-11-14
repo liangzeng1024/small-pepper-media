@@ -1,0 +1,63 @@
+.client-logo-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.client-logo-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.logo-carousel-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.slider-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.upper-row .react-multi-carousel-list {
+  animation: slideLeft 10s infinite linear;
+}
+
+.lower-row .react-multi-carousel-list {
+  animation: slideRight 10s infinite linear;
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slideRight {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.logo-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo-image {
+  max-width: 150px;
+  max-height: 100px;
+  object-fit: contain;
+  margin: 0 auto;
+}

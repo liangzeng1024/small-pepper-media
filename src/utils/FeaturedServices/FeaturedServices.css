@@ -1,0 +1,92 @@
+.featured-services-container {
+    text-align: center;
+    padding: 40px;
+  }
+  
+  .featured-services-title {
+   
+    margin-bottom: 20px;
+  }
+  
+  .featured-services-tabs {
+    margin-bottom: 20px;
+  }
+  
+  .featured-service-card-container {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .featured-service-card {
+    width: 350px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .featured-service-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .featured-service-card-image {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .featured-service-card-title {
+    font-weight: bold;     /* Makes the text bold */
+    text-align: left;    /* Centers the text */
+    font-size: 2.2rem;
+    margin-bottom: 12px;
+  }
+  
+  .featured-service-card-description {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .featured-service-price {
+    font-weight: bold;
+    text-align: left;
+    color: #ff0202;
+    margin-bottom: 15px;
+  }
+  
+  .button-group {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .show-details-button,
+  .add-to-cart-button {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .show-details-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .add-to-cart-button {
+    background-color: #28a745;
+  }
+  
+  .add-to-cart-button:hover {
+    background-color: #218838;
+  }
+  

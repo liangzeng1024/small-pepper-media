@@ -1,0 +1,91 @@
+/* src/utils/PortfolioSection/PortfolioSection.css */
+
+/* General Layout and Styling */
+.portfolio-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .portfolio-item {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .portfolio-image,
+  .portfolio-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover .portfolio-image,
+  .portfolio-item:hover .portfolio-video {
+    transform: scale(1.1);
+  }
+  
+  /* Image and Video Hover Effects */
+  .portfolio-image {
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  
+  .portfolio-video {
+    transition: transform 0.5s ease, filter 0.5s ease;
+  }
+  
+  /* Caption on Hover */
+  .portfolio-item::after {
+    content: "View Project";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .portfolio-item:hover::after {
+    opacity: 1;
+  }
+  
+  /* Carousel Styling */
+  .react-multi-carousel-item {
+    padding: 0 15px;
+  }
+  
+  .react-multi-carousel-item img {
+    border-radius: 15px;
+  }
+  
+  .carousel-container {
+    position: relative;
+  }
+  
+  .react-multi-carousel-dot {
+    background-color: #bbb;
+    transition: background-color 0.3s ease;
+  }
+  
+  .react-multi-carousel-dot:hover {
+    background-color: #ff6a00;
+  }
+  
+  .react-multi-carousel-dot.active {
+    background-color: #ff6a00;
+  }
+  
