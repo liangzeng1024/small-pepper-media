@@ -6,38 +6,38 @@ import 'react-multi-carousel/lib/styles.css';
 const portfolioItems = [
   {
     id: 1,
-    type: 'video',
-    url: '/videos/1.mp4',
+    type: 'youtube',
+    url: 'https://www.youtube.com/embed/n13_iPdrEWc', // Embed URL for YouTube
     alt: 'Portfolio Video 1',
   },
   {
     id: 2,
-    type: 'video', // Type is video
-    url: '/videos/2.mp4', // Reference the video file in public/videos
+    type: 'youtube', // Type is video
+    url: 'https://www.youtube.com/embed/KY_eRiyP-V0', // 
     alt: 'Portfolio Video 2',
   },
   {
     id: 3,
-    type: 'video', // Type is video
-    url: '/videos/3.mp4', // Reference the video file in public/videos
+    type: 'youtube', // Type is video
+    url: 'https://www.youtube.com/embed/yL_WUZHeqYk', // Reference the video file in public/videos
     alt: 'Portfolio Video 3',
   },
   {
     id: 4,
-    type: 'video', // Type is video
-    url: '/videos/4.mp4', // Reference the video file in public/videos
+    type: 'youtube', // Type is video
+    url: 'https://www.youtube.com/embed/yh7g35cjmg0', // Reference the video file in public/videos
     alt: 'Portfolio Video 4',
   },
   {
     id:5 ,
-    type: 'video', // Type is video
-    url: '/videos/5.mp4', // Reference the video file in public/videos
+    type: 'youtube', // Type is video
+    url: 'https://www.youtube.com/embed/ii6VIkR1OBo', // Reference the video file in public/videos
     alt: 'Portfolio Video 5',
   },
   {
     id:6 ,
-    type: 'video', // Type is video
-    url: '/videos/6.mp4', // Reference the video file in public/videos
+    type: 'youtube', // Type is video
+    url: 'https://www.youtube.com/embed/9OQQE9r9PuQ', // Reference the video file in public/videos
     alt: 'Portfolio Video 6',
   }
   // Add more items as needed
@@ -74,6 +74,15 @@ const PortfolioSection = () => {
           <div className="portfolio-item" key={item.id}>
             {item.type === 'photo' ? (
               <img src={item.url} alt={item.alt} className="portfolio-image" />
+            ) : item.type === 'youtube' ? (
+              <iframe
+                className="portfolio-video"
+                src={item.url}
+                title={item.alt}
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              ></iframe>
             ) : (
               <video controls className="portfolio-video">
                 <source src={item.url} type="video/mp4" />
